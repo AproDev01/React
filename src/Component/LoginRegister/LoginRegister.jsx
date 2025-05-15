@@ -34,7 +34,7 @@ const LoginRegister = () => {
             <button type='submit'>Login</button>
             <div className="register-link">
                 <p>Don't have an account ? <a 
-                href=" " onClick={registerLink}> Register</a> </p>
+                href=" " onClick={(e) => { e.preventDefault(); registerLink(); }}> Register</a> </p>
             </div> 
         </form>
      </div>
@@ -61,7 +61,7 @@ const LoginRegister = () => {
             <button type='submit'>Register</button>
             <div className="register-link">
                 <p>Already have an account ? <a 
-                href=" " onClick={LoginLink}> Login</a> </p>
+                href=" " onClick={(e) => { e.preventDefault(); LoginLink(); }}> Login</a> </p>
             </div> 
         </form>
      </div>
